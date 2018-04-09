@@ -52,7 +52,7 @@ We use a script for that so that we can change the commands for tests in a PR, w
 * and create `config/application.example.yml` where you will specify the only environment variable you need for now:
   `SECRET_KEY_BASE`.
 
-* Add `/config/application.yml` to your `.gitignore`
+* Add `/config/application.yml` to your `.gitignore` (the command `figaro install` does it already for you)
 
 ## bin/setup
 
@@ -74,7 +74,7 @@ end
 
 * Change also  `system!('bundle install')` to `system!('bundle install --jobs=3 --retry=3')`
 
-* Run `bundle exec rails db:migrate` to generate an empty `schema.rb` file
+* Run `bundle exec rails db:create db:migrate` to generate an empty `schema.rb` file
 * Run `bin/setup`.
 
 ## Configurations
@@ -90,6 +90,7 @@ config.i18n.default_locale = :de # may vary
 
 ```ruby
 config.force_ssl = true # uncomment
+config.ssl_options = { hsts: { preload: true, expires: 1.year } } # add
 config.log_level = :warn # change
 ```
 

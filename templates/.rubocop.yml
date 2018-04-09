@@ -27,16 +27,16 @@ Naming/FileName:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-  
+
 Style/FormatStringToken:
-  Enabled: false  
+  Enabled: false
 
 Rails/LexicallyScopedActionFilter:
-  Enabled: false  
+  Enabled: false
 
 AllCops:
   TargetRailsVersion: 5.1
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   Include:
     - '**/Rakefile'
     - '**/config.ru'

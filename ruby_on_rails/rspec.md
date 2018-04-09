@@ -7,19 +7,21 @@ Even if is not mandatory, we believe you should discuss with your team the decis
 * Add the following gems to your Gemfile
 
 ```ruby
-group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'selenium-webdriver'
+group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'rspec-rails'
+end
+
+group :test do
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
 end
 ```
 
-you should know exactly why you are adding each one of them, why is necessary
+and run `bundle install`.
+
+You should know exactly why you are adding each one of them and why is necessary
 
 ## Configuration
 

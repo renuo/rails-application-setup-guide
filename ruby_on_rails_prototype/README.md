@@ -1,23 +1,19 @@
-# Ruby On Rails 5.1
+# Ruby On Rails Prototype
 
-This setup will cover a pure, monolithic Rails Applications.
-This is the most frequent type of application we have at Renuo and probably also the easiest to setup.
-The application (and relative github repo) will be named after the `[project-name]` you chose before.
+So you have an idea and you want to get it running as fast as possible.
+This guide is for you: it will give you hints on starting as fast as possible keeping Renuo high quality standards.
+Even if is just a prototype you should follow some best practices nevertheless.
 
-**Be careful: this guide explains how to configure a Rails Application and not a Rails API Application!**
-If you have to setup an API-Only application follow the [relative guide](../ruby_on_rails_api/README.md).
+**This guide is for the setup of a prototype**.
+If you have to setup a project for a client please follow the [Ruby On Rails](../ruby_on_rails/README.md) guide.
 
-**This guide is for the setup of a client project**.
-If you want to "try out" something with Rails and experiment a little bit,
-we suggest you to follow the [Rails Prototype](../ruby_on_rails_prototype/README.md) guideline which is a simplified and faster
-version of this guide.
-
-1. [Initialise the Rails App](app_initialisation.md)
-1. [Push to Git Repository](first_git_push.md)
-1. [Initialise Gitflow](initialise_gitflow.md)
-1. [Configure the CI](configure_ci.md)
-1. [Create an Application Server](create_application_server.md)
-1. [Configure Continuous Deployment](configure_cd.md)
+1. [Initialise the Rails App](../ruby_on_rails/app_initialisation.md)
+1. [Push to Git Repository](../ruby_on_rails/first_git_push.md)
+1. If you want, you can configure a CI, following this guide and taking in consideration that you have only the master
+branch: [Configure the CI](../ruby_on_rails/configure_ci.md)
+1. [Push to Heroku](push_to_heroku.md)
+1. If you want, you can configure a CD, following this guide and taking in consideration that you have only the master
+branch: [Configure Continuous Deployment](../ruby_on_rails/configure_cd.md)
 
 Once here, your app should be up and running on all three environments.
 
